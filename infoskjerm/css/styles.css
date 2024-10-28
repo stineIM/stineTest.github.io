@@ -1,0 +1,53 @@
+body {
+    margin:0; 
+    padding:0;
+}
+.container {
+    height: 100vh;
+}
+
+.row1 {
+    height: 60vh;
+    background-color: aquamarine;
+}
+
+.row1 h1 {
+    margin-top:0;
+}
+
+.row2 {
+    display: flex;
+    height: 40vh;
+    background-color: blue; 
+}
+
+.col-md-4 {
+    margin-top:0;
+    padding-top:10px;
+}
+
+.box {
+    padding:10px;
+}
+
+#timeanddate {
+    background-color: darkcyan;
+    width: 20%;
+    text-align: center;
+    justify-content:center;
+}
+
+#timeanddate #time {
+    font-size: 4rem;
+    color:white;
+}
+
+#timeanddate #date {
+    font-size: 2rem;
+    color:white;
+}
+
+#timeanddate #day {
+    font-size: 2rem;
+    color:white;
+}
