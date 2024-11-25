@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="radio" value="movie" id="movie" name="category">movie
+    <input type="radio" value="book" id="book" name="category">book
+    <input type="radio" value="series" id="series" name="category">series
+    <button onclick="test()">Test</button>
+    <script>
+        function test() {
+            const radios = document.getElementsByName("category");
+            let selectedValue = "";
+
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    selectedValue = radios[i].value; // Henter verdien av den valgte radio-knappen
+                    break;
+                }
+            }
+
+            if (selectedValue) {
+                console.log("Den valgte fargen er: " + selectedValue);
+            } else {
+                console.log("Ingen farge er valgt.");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
