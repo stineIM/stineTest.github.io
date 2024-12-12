@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeColor();">Velkommen</h1>
+    
+    <div class="quiz">
+        <div class="question">
+            <h4>Spørsmål 1</h4>
+            <h5>Kva planet er nærmast sola?</h5>
+            <input type="radio" name="q1" id="q1a">Merkur
+            <input type="radio" name="q1" id="q1b">Mars
+            <input type="radio" name="q1" id="q1c">Venus
+            <input type="radio" name="q1" id="q1d">Saturn
+        </div>
+        <div class="question">
+            <h4>Spørsmål 2</h4>
+            <h5>Kva er hovedstaden i Australia?</h5>
+            <input type="radio" name="q2" id="q2a">Melbourne
+            <input type="radio" name="q2" id="q2b">Canberra
+            <input type="radio" name="q2" id="q2c">Sydney
+            <input type="radio" name="q2" id="q2d">Brisbane
+        </div>
+        <button onclick="checkAnswer();">Sjekk svar</button>
+        <p id="resultText"></p>
+
+    </div>
+
+    <script type="text/JavaScript" src="js/quiz.js"></script>
+</body>
+</html>
