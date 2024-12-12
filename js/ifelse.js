@@ -26,13 +26,12 @@ if (alder < 16) {
 }
 
 */ 
-
+/* 
 // Eksempel 1 
 
-//let number = prompt("Skriv inn eit tal: "); 
-let number = 10; 
+let number = prompt("Skriv inn eit tal: "); 
 if (number > 5) {
-    //console.log("Tallet er større enn 5."); 
+    console.log("Tallet er større enn 5."); 
 }
 
 // Eksempel 2 
@@ -103,4 +102,16 @@ else if (!isRaining && isCold) {
 }
 else {
     console.log("Det regner ikkje og det er ikkje kaldt."); 
+}
+    */ 
+
+function checkNumber() {
+    let resultText = document.getElementById("resultText"); 
+    let number = document.getElementById("inpNumber").value; 
+   
+    resultText.innerText = "";
+
+    if (number < 100) {
+        resultText.innerText = "Talet er lågare enn 100.";
+    }
 }
